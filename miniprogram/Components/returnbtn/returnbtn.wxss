@@ -1,0 +1,10 @@
+/* Components/returnbtn/returnbtn.wxss */
+.returnbtn{
+  font-size: 28rpx;
+  color: #909399;
+  z-index: 5;
+  position:fixed;
+  left: 40rpx;
+  top: 100rpx;
+  letter-spacing: 0.1em;
+}

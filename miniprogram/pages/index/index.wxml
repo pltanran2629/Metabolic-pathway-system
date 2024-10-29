@@ -1,0 +1,75 @@
+<view class="contain">
+  <!-- 背景奶油图片 -->
+  <bgimage1></bgimage1>
+  <bgimage></bgimage>
+  <!-- 弹性盒子主要内容 -->
+  <view class="context">
+    <view class="contextbottom">
+      <scroll-view scroll-y='true' style="height: 82vh;">
+        <view class="contextbottomtitle">
+          <view class="contextbottomtitleleft text-grey">代谢通路</view>
+        </view>
+        <!-- 时间轴 -->
+        <view class="cu-timeline">
+          <!-- <view class="cu-time">2022.2.10</view> -->
+          <view bindtap="todetailpage" data-pathwayindex="0" class="cu-item cur cuIcon-noticefill">
+            <view class="content bg-blue shadow-blur light">
+              <text>碳水化合物代谢 Carbohydrate metabolism</text>
+            </view>
+          </view>
+          <view bindtap="todetailpage" data-pathwayindex="1" class="cu-item text-red cuIcon-attentionforbidfill">
+            <view class="content bg-gray light shadow-blur">
+              <text>能量代谢 Energy metabolism</text>
+            </view>
+          </view>
+          <view bindtap="todetailpage" data-pathwayindex="2" class="cu-item text-grey cuIcon-evaluate_fill">
+            <view class="content bg-blue light shadow-blur">
+              <text>类脂化合物代谢作用 Lipid metabolism</text>
+            </view>
+          </view>
+          <view bindtap="todetailpage" data-pathwayindex="3" class="cu-item text-cyan cuIcon-locationfill">
+            <view class="bg-gray light content shadow-blur">
+              <text>核苷酸代谢 Nucleotide metabolism</text>
+            </view>
+          </view>
+          <view bindtap="todetailpage" data-pathwayindex="4" class="cu-item text-gray">
+            <view class="bg-blue light content shadow-blur">
+              <text>氨基酸代谢 Amino acid metabolism</text>
+            </view>
+          </view>
+          <view bindtap="todetailpage" data-pathwayindex="5" class="cu-item cur text-red cuIcon-noticefill">
+            <view class="content bg-gray shadow-blur light">
+              <text>其他氨基酸的代谢 Metabolism of other amino acids</text>
+            </view>
+          </view>
+          <view bindtap="todetailpage" data-pathwayindex="6" class="cu-item cur text cuIcon-attentionforbidfill">
+            <view class="content bg-blue shadow-blur light">
+              <text>糖聚糖的生物合成和代谢 Glycan biosynthesis and metabolism</text>
+            </view>
+          </view>
+          <view bindtap="todetailpage" data-pathwayindex="7" class="cu-item cur text-cyan cuIcon-evaluate_fill">
+            <view class="content bg-gray shadow-blur light">
+              <text>辅助因子和维生素的代谢 Metabolism of cofactors and vitamins</text>
+            </view>
+          </view>
+          <view bindtap="todetailpage" data-pathwayindex="8" class="cu-item cur cuIcon-locationfill">
+            <view class="content bg-blue shadow-blur light">
+              <text>萜类和聚酮类物质的代谢 Metabolism of terpenoids and polyketides</text>
+            </view>
+          </view>
+          <view bindtap="todetailpage" data-pathwayindex="9" class="cu-item cur text-red">
+            <view class="content bg-gray shadow-blur light">
+              <text>其他次生代谢物的生物合成 Biosynthesis of other secondary metabolites</text>
+            </view>
+          </view>
+          <view bindtap="todetailpage" data-pathwayindex="10" class="cu-item cur cuIcon-noticefill">
+            <view class="content bg-blue shadow-blur light">
+              <text>异种生物体的生物降解和代谢 Xenobiotics biodegradation and metabolism</text>
+            </view>
+          </view>
+        </view>
+        <view class="text-grey padding-sm ending">--到底啦--</view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

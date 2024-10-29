@@ -1,0 +1,83 @@
+/* .bgimage{
+width: 100%;
+height: 298rpx;
+position: fixed;
+top: 0rpx;
+left: 0rpx;
+z-index: 0;
+}
+.bgimage1{
+  width: 300rpx;
+  height: 300rpx;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+} */
+.context{
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ padding-top: 220rpx;
+ min-height: calc(100vh);
+  
+}
+.contexttop{
+  display: flex;
+  flex-direction: column;
+  /* padding: 20rpx; */
+  font-size: 32rpx;
+  width: 90%;
+  font-weight: 500;
+ font-family:PingFang SC;
+ padding-bottom: 40rpx;
+}
+.contexttoptitleright{
+  z-index: 100;
+}
+.contextbottomtitleright{
+  z-index: 100;
+}
+.contexttoptitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom:10rpx ;
+}
+.contexttopcen{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.imageface{
+  width: 144rpx;
+  height: 144rpx;
+}
+/* 虚线 */
+.contextline{
+width: 85%;
+height: 2rpx;
+border-top: 4rpx dashed #bbbbbb;
+}
+/* 物品信息 */
+.contextbottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding-top: 50rpx;
+}
+.contextbottomtitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 32rpx;
+  padding-bottom: 15rpx;
+  font-weight: 500;
+  width: 100%;
+}
+.ending{
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,18 @@
+<view class="contain">
+<!-- <bgimage1></bgimage1> -->
+<bgimage1></bgimage1>
+<view class="context">
+  <view class="contextimage" bindtap="topage">
+    <view class="contextimagedetail">
+      <view class="contextcirle">
+      <image class="contextscan" src="../../image/scan/scan.png"></image>
+      <view class="textpart">图片分析</view>
+      </view>
+    </view>
+  </view>
+  <view class="contexttext">
+    <view>点击图片分析</view>
+    <view>进行化合物结构识别与分析</view>
+</view>
+</view>
+</view>

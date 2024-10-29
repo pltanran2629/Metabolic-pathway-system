@@ -1,0 +1,51 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/scan/scan",
+    "pages/mine/mine",
+    "pages/search/search",
+    "pages/pathway/pathway",
+    "pages/compounds/compounds",
+    "pages/aboutus/aboutus",
+    "pages/history/history"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#aaaaaa",
+    "selectedColor": "#227da7",
+    "backgroundColor": "#0000000",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "selectedIconPath": "image/index/tabbar1c.png",
+        "iconPath": "image/index/tabbar1.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/index/tabbar2c.png",
+        "iconPath": "image/index/tabbar2.png",
+        "pagePath": "pages/scan/scan",
+        "text": "图像分析"
+      },
+      {
+        "selectedIconPath": "image/index/tabbar3c.png",
+        "iconPath": "image/index/tabbar3.png",
+        "pagePath": "pages/search/search",
+        "text": "搜索"
+      },
+      {
+        "selectedIconPath": "image/index/tabbar4c.png",
+        "iconPath": "image/index/tabbar4.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

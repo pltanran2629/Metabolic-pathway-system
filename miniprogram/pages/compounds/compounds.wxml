@@ -1,0 +1,27 @@
+<!-- <script src="https://unpkg.com/smiles-drawer@1.0.10/dist/smiles-drawer.min.js"></script> -->
+<view class="contain">
+<bgimage></bgimage>
+<bgimage1></bgimage1>
+<returnbtn></returnbtn>
+<view class="content">
+<scroll-view scroll-y="true" style="height: 77vh;width: 100%;">
+  <view class="content-title">
+    <view class="content-titlechi">{{compound_name}}</view>
+  </view>
+  <view class="content-main">
+    <view class="content-main-total" wx:if="{{pathway_card.length>0}}">
+       该物质参与<text wx:for="{{pathway_card}}" wx:for-index="index" wx:key="name">{{item.pathway_name}}<text wx:if="{{index+1!=pathway_card.length}}">、</text></text>作用代谢通路。
+    </view>
+    <view class="content-main-total" wx:else>
+      该物质不参与代谢。
+    </view>
+    <view wx:for="{{pathway_card}}" wx:key="card">
+    <view class="pathwaycard">
+      <view class="pathwaycard-title text-blue light">{{item.pathway_name}}</view>
+      <view class="pathwaycard-content">{{item.pathway_desshort}}</view>
+    </view>
+    </view>
+  </view>
+</scroll-view>
+</view>
+</view>

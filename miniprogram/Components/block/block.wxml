@@ -1,0 +1,2 @@
+<!--Components/block/block.wxml-->
+<view class="goods">{{name}}</view>

@@ -1,0 +1,11 @@
+/* Components/bgimage1/bgimage1.wxss */
+.bgimage1{
+  width: 300rpx;
+  height: 300rpx;
+  position: fixed;
+  right: 15rpx;
+  bottom: 8rpx;
+  opacity: 0.8;
+  z-index: 0;
+  transform:rotate(-8deg);
+}

@@ -1,0 +1,9 @@
+/* Components/bgimage2/bgimage2.wxss */
+.pageimage{
+  width: 70%;
+  height:500rpx ;
+  position: absolute;
+  bottom: 0rpx;
+  right: -15rpx;
+  z-index: 0;
+}

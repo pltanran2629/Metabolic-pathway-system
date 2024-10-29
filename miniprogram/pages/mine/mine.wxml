@@ -1,0 +1,58 @@
+<view class="contain">
+  <bgimage></bgimage>
+  <view class="content1">
+    <view class="contenttop">
+      <view class="contenttopicon">
+        <view class="cu-avatar xl round margin-left" style="background-image:url({{userInfo.avatarUrl}});"></view>
+        <view class="contenttopname">{{userInfo.nickName}}</view>
+       <text class="cuIcon-right xl text-gray margin-right"></text>
+      </view>
+      <view class="contenttopdetail">
+        <view class="contenttopdetailleft">
+          <view class="contenttopdetailnum">{{ historycompound}}</view>
+          <view class="text-gray">化合物</view>
+        </view>
+        <view class="contenttopdetailcenter">
+          <view class="contenttopdetailnum">{{historypathway}}</view>
+          <view class="text-gray">代谢通路</view>
+        </view>
+        <view class="contenttopdetailright">
+          <view class="contenttopdetailnum">{{historypathway+historycompound}}</view>
+          <view class="text-gray">浏览</view>
+        </view>
+      </view>
+    </view>
+    <view class="contentcenter">
+      <view class="cu-list menu">
+        <view class="cu-item" bindtap="toaboutus">
+          <view class="content">
+            <text class="cuIcon-profile text-gray"></text>
+            <text>关于系统</text>
+          </view>
+        </view>
+       
+        <view class="cu-item" >
+         <button open-type="contact" class="clearBtn">
+          <view class="content" >
+            <text class="cuIcon-circlefill text-gray"></text>
+            <text>联系我们</text>
+          </view>
+          </button>
+        </view>
+        
+        <view class="cu-item">
+          <button open-type="feedback" class="clearBtn">
+          <view class="content">
+            <text class="cuIcon-mark text-gray"></text>
+            <text>用户反馈</text>
+          </view>
+          </button>
+        </view>
+      </view>
+    </view>
+    <view class="contentbottom">
+     <view class="changefamilys" bindtap="tohistory">查阅记录</view>
+     <view class="returnout" bindtap="login">{{login}}</view>
+    </view>
+  </view>
+</view>

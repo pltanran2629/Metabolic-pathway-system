@@ -1,0 +1,18 @@
+<view class="contain">
+<bgimage></bgimage>
+<bgimage1></bgimage1>
+<returnbtn></returnbtn>
+<view class="content">
+  <scroll-view 	scroll-y='true' style="height: 78vh;">
+  <view class="content-title">
+    <view  class="content-titlechi">{{pathway.pathway_name}}</view>
+    <view  class="content-titleen text-gray">({{pathway.pathway_nameen}})</view>
+  </view>
+  <view class="content-main">
+    <view>{{pathway.pathway_desshort}}</view>
+    <view>{{pathway.pathway_deslong}}</view>
+    <image class="content-main-image" mode="widthFix" src="{{pathway.pathway_image}}" bindtap='clickImg'></image>
+  </view>
+  </scroll-view>
+</view>
+</view>

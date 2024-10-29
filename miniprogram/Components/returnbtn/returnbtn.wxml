@@ -1,0 +1,2 @@
+<!--Components/returnbtn/returnbtn.wxml-->
+<view class="returnbtn" bindtap="backto"><text decode='true '>&lt;</text> 返回</view>

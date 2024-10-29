@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "bgimage1":"../../Components/bgimage1/bgimage1",
+    "bgimage2":"../../Components/bgimage2/bgimage2"
+  }
+}

@@ -1,0 +1,9 @@
+/* Components/bgimage/bgimage.wxss */
+.bgimage{
+  width: 40%;
+  height: 20%;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 0;
+  }

@@ -1,0 +1,31 @@
+/* pages/pathway/pathway.wxss */
+
+.content{
+  padding: 15vh 7vw 2vh 7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2vh;
+  color: #303133;
+}
+.content-titlechi{
+  font-size: 45rpx;
+  margin-bottom: 0.5vh;
+}
+.content-main{
+  font-size: 28rpx;
+  text-indent: 2em;
+  letter-spacing: 0.1em;
+  line-height: 1.8em;
+  color: #606266;
+}
+.content-main-image{
+  margin-top: 1vh;
+  width: 100%;
+  margin-bottom: 5vh;
+}

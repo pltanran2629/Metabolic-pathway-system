@@ -1,0 +1,46 @@
+.context{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh); 
+  padding-top: 292rpx;
+  
+}
+.contextimagedetail{
+  width: 520rpx;
+  height: 520rpx;
+  border:4rpx solid #2ca5de ;
+  border-radius:260rpx;
+  background: #2ca5de;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.contextcirle{
+width: 450rpx;
+height: 450rpx;
+border: 13rpx dashed white;
+border-radius: 225rpx;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.contexttext{
+  font-size: 28rpx;
+  text-align: center;
+  padding-top: 50rpx;
+  font-weight: 700;
+  z-index: 5;
+}
+.contextscan{
+  width: 178rpx;
+  height: 178rpx;
+}
+.textpart{
+  font-size: 34rpx;
+  font-weight: 600;
+  padding-top: 35rpx;
+  color: white;
+}

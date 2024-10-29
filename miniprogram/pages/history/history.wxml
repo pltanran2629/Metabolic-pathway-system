@@ -1,0 +1,30 @@
+<view class="contain">
+  <bgimage></bgimage>
+  <bgimage1></bgimage1>
+  <returnbtn></returnbtn>
+  <view class="content">
+    <scroll-view scroll-x style="width: 100vw;" class="bg-white nav text-center">
+      <view class="cu-item {{TabCur==0?'text-blue cur':''}}" bindtap="tabSelect" data-id="0">
+        化合物
+      </view>
+      <view class="cu-item {{TabCur==1?'text-blue cur':''}}" bindtap="tabSelect" data-id="1">
+        代谢路径
+      </view>
+    </scroll-view>
+    <scroll-view scroll-y="true" style="width:75%;height: 70vh; margin-top: 3vh;">
+      <view wx:if="{{TabCur==0}}">
+        <view wx:for="{{historycompound}}" wx:for-item="compound" wx:key="compound">
+          <view class="compoundcard" data-compound_name="{{compound.compound_name}}" data-compoundpathway="{{compound.pathway_index}}" bindtap="tocompound">
+            <view class="compoundcardname">{{compound.compound_name}}</view>
+            <view class="compoundcarddes text-gray">该物质主要参加<text wx:for="{{compound.pathway_index}}" wx:for-index="index" wx:key="{{compound._id}}" >{{item}}<text wx:if="{{index+1<compound.pathway_index.length}}">、</text></text>代谢路径。</view>
+          </view>
+        </view>
+      </view>
+      <view wx:if="{{TabCur==1}}">
+        <view wx:for="{{historypathway}}" wx:key="pathway">
+          <view class="pathwayname" bindtap="topathway" data-pathway="{{item.pathway_id}}">{{item.pathway_id}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

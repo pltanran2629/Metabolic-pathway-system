@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "bgimage1":"../../Components/bgimage1/bgimage1",
+    "bgimage":"../../Components/bgimage/bgimage",
+    "returnbtn":"/Components/returnbtn/returnbtn"
+  }
+}

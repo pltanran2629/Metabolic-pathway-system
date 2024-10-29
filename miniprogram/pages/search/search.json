@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "bgimage":"../../Components/bgimage/bgimage",
+    "v-block":"../../Components/block/block",
+    "bgimage1":"../../Components/bgimage1/bgimage1"
+  }
+}

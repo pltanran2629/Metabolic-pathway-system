@@ -1,0 +1,43 @@
+<!--miniprogram/pages/search/search.wxml-->
+<view class="contain">
+  <bgimage></bgimage>
+  <bgimage1></bgimage1>
+<view class="search1">
+  <view class="cu-bar search">
+    <view class="search-form radius">
+      <text class="cuIcon-search"></text>
+      <input value="{{search}}" type="text" placeholder="搜索化合物smile式" bindinput="GetSearchInput" confirm-type="search" bindconfirm="ToSearch"></input>
+      <text class="cuIcon-close" bindtap="clearinput"></text>
+    </view>
+    <view class="action" bindtap="ToSearch">
+      <text class="text-gray">搜索</text>
+    </view>
+  </view>
+</view>
+<view class="history">
+  <view class="historytop">
+    <view>搜索历史</view>
+    <view class="text-gray" bindtap="clearhistory">清空历史</view>
+  </view>
+ <view class="historycenter">
+   <view wx:for="{{history}}" wx:for-index="index" wx:key="this" wx:for-item="item">
+    <v-block name="{{item.compound_name}}" data-compoundname="{{item.compound_name}}" bindtap="searchhothis"></v-block>
+  </view>
+  </view> 
+</view>
+<view class="hot">
+  <view class="hottop">
+    <view>常见搜索</view>
+  </view>
+  <view class="historycenter">
+   <view wx:for="{{hot}}" wx:key="this" wx:for-item="item">
+    <!-- <view class="goods">火腿</view>
+    <view class="goods">jianzi</view>
+    <view class="goods">ffffffssssssss</view>
+    <view class="goods">指甲刀</view>
+    <view class="goods">only美白水乳</view> -->
+    <v-block  name="{{item.compound_name}}" data-compoundname="{{item.compound_name}}" bindtap="searchhothis"></v-block>
+  </view>
+  </view> 
+</view>
+</view>
